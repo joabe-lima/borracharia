@@ -1,0 +1,102 @@
+@font-face {
+    font-family: caviar;
+    src: url("../font/caviar_dreams/CaviarDreams.ttf");
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: rgb(248, 248, 248);
+}
+
+
+
+.menu-conta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/fundo-black.png');
+    color: white;
+    padding: 40px;
+    font-family: caviar;
+}
+.menu-conta h1 {
+    font-size: 30px;
+    font-weight: lighter;
+}
+.menu-conta a {
+    position: absolute;
+    left: 30px;
+    color: white;
+    text-decoration: none;
+}
+.menu-conta img {
+    width: 40px;
+}
+.menu-conta span {
+    color: rgb(0, 157, 219);
+}
+.central-conta {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    left: 7%;
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.068) 5px 5px 5px;
+    margin-bottom: 20px;
+}
+.central-conta table {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    width: 1200px;
+    
+}
+.central-conta thead {
+    background-color: rgb(156, 156, 156);
+    color: rgb(255, 255, 255);
+    height: 50px;
+    font-family: caviar;
+}
+.central-conta tbody {
+    text-align: center;
+    height: 50px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+}
+.central-conta tbody img {
+    width: 30px;
+    cursor: pointer;
+}
+.busca {
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    gap: 2em;
+}
+.busca button {
+    padding: 12px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(0, 157, 219);
+    color: white;
+    font-family: caviar;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.busca button:hover {
+    background-color: rgb(0, 123, 172);
+}
+.busca input {
+    padding: 15px;
+    width: 500px;
+    border-radius: 5px;
+    border: rgb(194, 194, 194) solid 1px;
+    outline-color: rgb(191, 229, 255);
+}

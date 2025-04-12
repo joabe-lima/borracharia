@@ -1,0 +1,154 @@
+@font-face {
+    font-family: bebas;
+    src: url("../font/BebasNeue-Regular.otf");
+  }
+  
+  @font-face {
+    font-family: roboto;
+    src: url("../font/roboto/Roboto-Light.ttf");
+  }
+  
+  @font-face {
+    font-family: caviar;
+    src: url("../font/caviar_dreams/CaviarDreams.ttf");
+  }
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(248, 250, 255);
+}
+
+body p {
+   color: black; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.13);
+    border-radius: 0 10px 10px 0;
+    padding: 50px;
+    gap: 1rem;
+}
+
+input {
+    width: 350px;
+    padding: 15px;
+    border: 1px solid rgb(185, 185, 185);
+    outline-color: rgb(190, 218, 255);
+    background-color: rgb(255, 255, 255);
+}
+
+label {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    width: 160px;
+    padding: 15px; 
+    margin-left: 27%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(0, 164, 230);
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button:hover {
+    background-color: rgb(0, 119, 167);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+span {
+    color: rgb(0, 164, 230);
+    font-family: caviar, sans-serif;
+}
+.central {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.central-cad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7rem;
+}
+
+h1 {
+    color: white;
+    font-family: caviar, sans-serif;
+}
+
+.container-marca p {
+    color: rgb(211, 211, 211);
+    font-family: caviar, sans-serif;
+}
+
+.container-marca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('../img/fundo-black.png');
+    background-size: 120vh;
+    height: 450px;
+    width: 450px;
+    border-radius: 10px 0 0 10px;
+
+}
+
+.container-marca-cad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('../img/fundo-black.png');
+    background-size: 150vh;
+    height: 555px;
+    width: 450px;
+    border-radius: 10px 0 0 10px;
+
+}
+.container-marca-cad p {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.direitos {
+    position: absolute;
+    bottom: 0%;
+    font-family: roboto,sans-serif;
+}
+
+.alert {
+    position: absolute;
+    top: 10px;
+    left: 43%;
+    width: 310px;
+    font-size: 20px;
+}
+
+.alert p {
+   color: green;
+}
