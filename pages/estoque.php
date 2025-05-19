@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,6 @@
     </nav>
 
 <div class="central-estoque">
-    <div class="busca"><button>buscar</button> <input type="text" placeholder="qual produto você procura ?"></div>
     <table>
         <thead>
             <th>ID</th>
@@ -39,8 +38,8 @@ $result = $conn->query($sql);
                     <td>" . $row['marca'] . "</td>
                     <td>" . $row['modelo'] . "</td>
                     <td>" . $row['quantidade'] . "</td>
-                    <td><img src='../img/1486564394-edit_81508.png' alt=''></td>
-                    <td><img src='../img/trash.png' alt=''></td>
+                    <td><a href='edit-produto.php?id=" . $row['idprodutos'] . "' class='editar'><img src='../img/1486564394-edit_81508.png' alt=''></a></td>
+                    <td><a href='delete-prod.php?id=" . $row['idprodutos'] . "' class='excluir'><img src='../img/trash.png' alt=''></a></td>
                 </tbody>";
             }
                 

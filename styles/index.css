@@ -50,8 +50,8 @@ label {
 }
 
 button {
-    width: 160px;
-    padding: 15px; 
+    width: 150px;
+    padding: 13px; 
     margin-left: 27%;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -131,8 +131,8 @@ h1 {
 
 }
 .container-marca-cad p {
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(211, 211, 211);
+    font-family: caviar, sans-serif;
 }
 
 .direitos {

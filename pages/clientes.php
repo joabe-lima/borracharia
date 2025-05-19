@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,6 @@
             <h1>contas dos <span>clientes</span></h1>
         </nav>
     <div class="central-conta">
-        <div class="busca"><button>buscar</button> <input type="text" placeholder="quem você procura ?"></div>
         <table>
             <thead>
                 <th>ID</th>
@@ -36,8 +35,8 @@ $result = $conn->query($sql);
                     <td>" . $row['nome'] . "</td>
                     <td>" . $row['telefone'] . "</td>
                     <td>" . $row['email'] . "</td>
-                    <td><img src='../img/1486564394-edit_81508.png' alt=''></td>
-                    <td><img src='../img/trash.png' alt=''></td>
+                    <td><a href='edit-cliente.php?id=" . $row['id_clientes'] . "' class='editar'><img src='../img/1486564394-edit_81508.png' alt=''></a></td>
+                    <td><a href='delete.php?id=" . $row['id_clientes'] . "' class='excluir'><img src='../img/trash.png' alt=''></a></td>
                 </tbody>";
             }
                 

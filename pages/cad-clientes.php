@@ -10,7 +10,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
    if($conn->query($sql) === TRUE) {
 
-       echo "<div class='alert'><p>cliente cadastrado com sucesso!</p></div>";
+       echo "<script>alert('Cadastrado com sucesso!');</script>";
+       header("location: home.php");
    }else{
       echo "erro: " . $sql . "<br>" . $conn->error;
    }
@@ -20,7 +21,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

@@ -89,6 +89,15 @@ nav a:hover {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.navbar button {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  font-size: 15px;
+  font-family: caviar;
+  cursor: pointer;
+}
+
 .paginas img {
   width: 30px;
   cursor: pointer;
@@ -244,4 +253,45 @@ nav a:hover {
 
 .direcional-os span {
   color: white;
+}
+.links{
+  display: flex;
+  gap: 10rem;
+  margin: 50px;
+  font-family: caviar;
+  
+}
+.links a {
+  text-decoration: none;
+  color: white;
+}
+.coluna-a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  gap: 0.8rem;
+}
+.coluna-b {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  gap: 0.8rem;
+}
+footer{
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(100, 100, 100);
+  width: 100%;
+}
+.direitos {
+  color: rgb(255, 255, 255);
+  font-family: caviar;
+  margin: 10px;
+}
+.direitos span {
+  color: rgb(0, 164, 230);
+  font-weight: bolder;
 }

@@ -7,7 +7,7 @@
     margin: 0;
 }
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(221, 241, 255);
 }
 
 .menu-form {
@@ -40,23 +40,30 @@ body {
 form {
     display: flex;
     flex-direction: column;
-    padding: 50px 10px;
+    padding: 60px 10px;
     gap: 2rem;
     width: 40rem;
     margin-left: 26%;
     margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.123);
 }
 
 input {
-    width: 500px;
+    width: 450px;
     padding: 15px;
-    margin-left: 50px
+    margin-left: 80px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline-color: rgb(191, 237, 255);
 }
 
 button {
-    width: 180px;
-    padding: 15px;
-    margin-left: 35%;
+    width: 480px;
+    padding: 17px;
+    margin-left: 13%;
     margin-top: 40px;
     border: none;
     border-radius: 5px;
@@ -74,9 +81,9 @@ button:hover{
 label {
     color: rgb(0, 157, 219);
     font-family: caviar;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
-    margin-left: 50px;
+    margin-left: 80px;
 }
 
 .alert {

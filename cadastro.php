@@ -1,19 +1,24 @@
 <?php
-include './conect.php';
+include ('./conect.php');
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
    $nome = $_POST['nome'];
    $user = $_POST['user'];
-   $password = $_POST['password'];
+   $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
    $sql = "INSERT INTO conta(nome, usuario, senha) VALUES ('$nome', '$user', '$password')";
 
    if($conn->query($sql) === TRUE) {
 
-       echo "<div class='alert'><p>conta cadastrada com sucesso!</p></div>";
+    header("location: index.php");
        
    }else{
-      echo "erro: " . $sql . "<br>" . $conn->error;
+    if(mysqli_errno($conn) == 1062){
+       echo "Erro: este e-mail já está cadastrado";
+    }else{
+        echo "Erro ao cadastrar: " . mysqli_error($conn);
+    }
+      
    }
 }
 
@@ -31,7 +36,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <div class='central-cad'>
         <div class='container-marca-cad'>
-            <h1><span>MG</span> Borracaria</h1>
+            <h1><span>MG</span> Borracharia</h1>
             <p>Referência em manutenção de pneus.</p>
         </div>
         <form method="POST">

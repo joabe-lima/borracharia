@@ -1,5 +1,21 @@
+<?php
+include '../conect.php';
+
+function encerrarSessao() {
+   session_unset();
+   session_destroy();
+   header("location: ../index.php");
+   exit();
+}
+
+if(isset($_POST['logout'])) {
+  encerrarSessao();
+}
+
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +28,15 @@
     <div class='paginas' >
        <a href="./clientes.php">clientes</a>
        <a href="./estoque.php">estoque</a>
-       <a href="#">ordens</a>
+       <a href="./ordens.php">ordens</a>
        <li class='menu'>
          <img  src="../img/botao-voltar.png" alt="menu">
        <ul class='navbar'>
-          <li>sair</li>
+          <li>
+            <form method="post">
+               <button type="submit" name="logout">sair</button>
+            </form>
+          </li>
        </ul> 
        </li>
     </div>
@@ -53,9 +73,26 @@
                <p>Com a função de criar ordens de serviços, 
                   agora você pode organizar e deixar registrado todas as 
                emissões de serviços feitos na sua empresa, com pratcidade e comforto.</p>
-              <a href="#">criar ordem</a>
+              <a href="./cad-ordem.php">criar ordem</a>
             </div>
           </div>
    </main>
+   <footer>
+      <div class="links">
+         <div class="coluna-a">
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">tweeter</a>
+            <a href="#">threads</a>
+         </div>
+         <div class="coluna-b">
+         <a href="#">linkedim</a>
+         <a href="#">youtube</a>
+         <a href="#">tweet</a>
+         <a href="#">gmail</a>
+         </div>
+      </div>
+      <p class="direitos"><span>MG</span> Borracharia , Todos os direitos reservados.</p>
+   </footer>
 </body>
 </html>
